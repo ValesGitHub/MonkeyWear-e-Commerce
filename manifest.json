@@ -1,0 +1,20 @@
+{
+    "name": "MonkeyWear E-Commerce",
+    "short-name": "MonkeyWear",
+    "start_url": ".",
+    "background_color": "#fff",
+    "theme_color": "#d4e157",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/logo416.png",
+            "sizes": "416x416",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo512.png",
+            "sizes": "2000X2000",
+            "type": "image/png"
+        }
+    ]
+}

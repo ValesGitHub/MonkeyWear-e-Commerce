@@ -1,0 +1,15 @@
+{
+  "name": "monkeywear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "goLive": "lt --port 5500"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}
