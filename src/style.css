@@ -8,16 +8,16 @@ body{
     padding: 0;
 }
 
-#gender-select-wrapper{
+.gender-select-wrapper{
     display: flex;
     height: 100vh;
     font-size: 5rem;
 }
-#gender-select-wrapper:hover{
+.gender-select-wrapper:hover{
     cursor: pointer;
 }
 
-#woman-select{
+.woman-select{
     display: flex;
     width: 50%;
     height: 100%;
@@ -31,7 +31,7 @@ body{
     color: pink;
 }
 
-#man-select{
+.man-select{
     display: flex;
     width: 50%;
     height: 100%;
