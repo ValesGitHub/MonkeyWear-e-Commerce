@@ -16,10 +16,10 @@ function getCookie(cname) {
 
 if(document.cookie) {
     if(getCookie("gender") == 'M') {
-        location.href = "src/pages/man_side/manpage.html";
+        location.href = "manpage.html";
     }
     else {
-        location.href = "src/pages/woman_side/womanpage.html";
+        location.href = "womanpage.html";
     }
 }
 
@@ -29,11 +29,11 @@ document.body.onload = () => {
 
 
     womanBtn.addEventListener("click", () => {
-        location.href = "src/pages/woman_side/womanpage.html";
+        location.href = "womanpage.html";
     });
     
     manBtn.addEventListener("click", () => {
-        location.href = "src/pages/man_side/manpage.html";
+        location.href = "manpage.html";
     });
 }
 

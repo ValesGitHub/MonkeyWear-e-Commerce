@@ -3,7 +3,7 @@
     "short-name": "MonkeyWear",
     "start_url": ".",
     "background_color": "#fff",
-    "theme_color": "#d4e157",
+    "theme_color": "#9400D3",
     "display": "standalone",
     "icons": [
         {
@@ -12,9 +12,10 @@
             "type": "image/png"
         },
         {
-            "src": "images/logo512.png",
+            "src": "images/maskable_icon.png",
             "sizes": "2000X2000",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ]
 }

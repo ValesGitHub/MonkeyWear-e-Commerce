@@ -1,3 +1,7 @@
+.man-link {
+    position: relative;
+}
+
 .man-menu-link {
     background-color: rgb(230, 230, 230);
 }
