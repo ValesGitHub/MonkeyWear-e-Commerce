@@ -1,11 +1,22 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
+}
+
 body{
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
     font-size: 200%;
+    font-weight: 600;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -19,6 +30,10 @@ h1 {
     align-items: center;
     background-color: rgb(0, 0, 0, 0.9);
     height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
 }
 
 .menu-btn {
@@ -56,7 +71,7 @@ h1 {
     width: 30px;
     background-color: white;
     position: absolute;
-    height: 2px;
+    height: 0.5px;
     left: 10px;
 }
 
@@ -69,7 +84,7 @@ margin-top: 20px;
 
 .header-elements li{
     list-style: none;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .header-elements *:hover{
@@ -105,14 +120,77 @@ margin-top: 20px;
 .exit-btn {
     color: blue;
     position: absolute;
-    top: 17px;
-    right: 20px;
+    top: 0;
+    right: 0;
     display: none;
 }
 
+.exit-btn:hover {
+    cursor: pointer;
+}
+
 .icon-img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+.pro{
+    color: black;
+    text-align: center;
+    margin: 0 50px ;
+}
+
+.pro h2 {
+    font-size: 200%;
+    padding-top: 30px;
+}
+
+.pro .product {
+    width: 300px;
+    margin: 25px 25px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.pro .product:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+
+
+.pro .product .pro-img {
+    width: 100%;
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pro .product .like-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 400px;
+    right: 10px;
+    z-index: 8;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.pro .product .like-btn-black{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 400px;
+    right: 10px;
+    z-index: 8;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: none;
 }
 
 
