@@ -19,15 +19,16 @@ laix.addEventListener("click", () => {
 });
 
 for(var i=0; i<likeBtn.length; i++) {
-    console.log(likeBtn[i])
-    likeBtn[i].addEventListener("mouseover", () => {
-        likeBtnBlack[i].style.display = "block";
+    console.log(likeBtn[i]);
+    console.log(likeBtnBlack[i])
+    likeBtn[i].addEventListener("mouseover", (likeBtn) => {
+        console.log(likeBtn[i])
+        e.nextElementSibling.style.display = "block";
         likeBtn.style[i].display = "none";
     });
+
+    likeBtnBlack[i].addEventListener("mouseout", () => {
+        likeBtnBlack[i].style.display = "none";
+        likeBtn.style[i].display = "block";
+    });
 }
-
-
-likeBtnBlack.addEventListener("mouseout", () => {
-    likeBtnBlack.style.display = "none";
-    likeBtn.style.display = "block";
-});
