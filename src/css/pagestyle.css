@@ -172,7 +172,7 @@ margin-top: 20px;
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 400px;
+    bottom: 110px;
     right: 10px;
     z-index: 8;
     border-radius: 50%;
@@ -184,7 +184,7 @@ margin-top: 20px;
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 400px;
+    bottom: 110px;
     right: 10px;
     z-index: 8;
     border-radius: 50%;
@@ -277,4 +277,8 @@ margin-top: 20px;
     .exit-btn {
         display: inline;
     }
+}
+
+@media (max-width: 390px) {
+    
 }
