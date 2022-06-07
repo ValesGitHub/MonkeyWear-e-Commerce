@@ -1,0 +1,275 @@
+@import '_variables.scss';
+
+@mixin heartStyle() {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 110px;
+    right: 10px;
+    z-index: 8;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+@font-face {
+    font: {
+        family: Montserrat;
+        display: block;
+    }
+    src: url("../../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: $primary;
+    font-family: $base-font;
+}
+
+.logo {
+    font: {
+        size: 200%;
+        weight: 600;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $darkest-color;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: $base-box-shadow;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.gender-select {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 50px;
+
+    * {
+        color: $primary;
+        padding: 0 10px;
+    }
+
+    a {
+        padding: 15px 0;
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
+
+.man-select{
+    border-left: 1px solid $hover-color;
+}
+
+.active::after {
+    content: "";
+    width: 30px;
+    background-color: $primary;
+    position: absolute;
+    height: 0.5px;
+    left: 10px;
+}
+
+.header-elements{
+    margin-right: 50px;
+    display: flex;
+    padding-left: 0;
+    margin-top: 20px;
+
+    li {
+        list-style: none;
+        margin-right: 25px;
+    }
+
+    *:hover {
+        cursor: pointer;
+    }
+}
+
+.gender-menu {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    background-color: $hover-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+}
+
+.menu-link{
+    color: $primary;
+    width: 100%;
+    text-align: center;
+    padding: 10.5px 0;
+    text-decoration: none;
+    transition: 0.3s ease;
+    
+    &:hover {
+        background-color: $primary;
+        color: $darkest-color;
+    }
+}
+
+.exit-btn {
+    color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon-img {
+    width: 20px;
+    height: 20px;
+}
+
+.pro{
+    color:$darkest-color;
+    text-align: center;
+    margin: 0 50px ;
+
+    h2 {
+        font-size: 200%;
+        padding-top: 30px;
+    }
+
+    .product {
+        width: 300px;
+        margin: 25px 25px;
+        position: relative;
+        transition: 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: $base-box-shadow;
+        }
+
+        .pro-img {
+            width: 100%;
+        }
+
+        .like-btn {
+            @include heartStyle();
+        }
+
+        .like-btn-black{
+            @include heartStyle();
+            display: none;
+        }
+    }
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {
+    .gender-select {
+        display: none;
+    }
+    
+    .menu-btn {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .header-elements{
+        margin-right: 0;
+
+        li {
+            margin-right: 10px;
+        }
+    }
+
+    .logo {
+        font-size: 150%;
+    }
+
+    .gender-menu {
+        display:flex;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            width: 50%;
+            padding: 15px 10px;
+            
+            &:hover{
+                background-color: $secondary;
+            }
+
+            div {
+                text-align: center;
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        position: fixed;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: $primary;
+        z-index: 9;
+        left: -300px;
+        transition: none;
+
+        * {
+            color:
+            $darkest-color;
+        }
+    }
+
+    .menu-link {
+        width: 90%;
+        height: 50px;
+        padding: 0;
+        background-color: $secondary;
+        margin: 10px;
+
+        div {
+            text-align: left;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+    }
+
+    .exit-btn {
+        display: inline;
+    }
+}

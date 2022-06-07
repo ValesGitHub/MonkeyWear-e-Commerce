@@ -1,284 +1,253 @@
 @font-face {
-    font-family: Montserrat;
-    src: url("../../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
+  font-family: Montserrat;
+  font-display: block;
+  src: url("../../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
 }
-
-body{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo {
-    font-size: 200%;
-    font-weight: 600;
+  font-size: 200%;
+  font-weight: 600;
 }
-
 .logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-h1 {
-    color: blue;
-}
-
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(0, 0, 0, 0.9);
-    height: 50px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 9;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .menu-btn {
-    display: none;
+  display: none;
 }
 
-.gender-select{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-left: 50px;
+.gender-select {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 50px;
+}
+.gender-select * {
+  color: #fff;
+  padding: 0 10px;
+}
+.gender-select a {
+  padding: 15px 0;
+  text-decoration: none;
+  color: #000;
+}
+.gender-select a:hover {
+  background-color: rgb(100, 100, 100);
 }
 
-.gender-select *{
-    color: white;
-    padding: 0 10px;
-}
-
-.gender-select a{
-    padding: 15px 0;
-    text-decoration: none;
-    color: black;
-}
-
-.gender-select a:hover{
-    background-color: rgb(100, 100, 100)
-}
-
-.man-select{
-    border-left: 1px solid rgb(100, 100, 100);
+.man-select {
+  border-left: 1px solid rgb(100, 100, 100);
 }
 
 .active::after {
-    content: "";
-    width: 30px;
-    background-color: white;
-    position: absolute;
-    height: 0.5px;
-    left: 10px;
+  content: "";
+  width: 30px;
+  background-color: #fff;
+  position: absolute;
+  height: 0.5px;
+  left: 10px;
 }
 
-.header-elements{
-    margin-right: 50px;
-    display: flex;
-    padding-left: 0;
-margin-top: 20px;
+.header-elements {
+  margin-right: 50px;
+  display: flex;
+  padding-left: 0;
+  margin-top: 20px;
 }
-
-.header-elements li{
-    list-style: none;
-    margin-right: 25px;
+.header-elements li {
+  list-style: none;
+  margin-right: 25px;
 }
-
-.header-elements *:hover{
-    cursor: pointer;
+.header-elements *:hover {
+  cursor: pointer;
 }
 
 .gender-menu {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    width: 100%;
-    background-color: rgb(100, 100, 100);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40px;
-}
-.menu-link{
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10.5px 0;
-    text-decoration: none;
-    transition: 0.3s ease;
+  width: 100%;
+  background-color: rgb(100, 100, 100);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
 }
 
+.menu-link {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10.5px 0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 .menu-link:hover {
-    background-color: white;
-    color: black;
+  background-color: #fff;
+  color: #000;
 }
 
 .exit-btn {
-    color: blue;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
+  color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 }
-
 .exit-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .icon-img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-.pro{
-    color: black;
-    text-align: center;
-    margin: 0 50px ;
+.pro {
+  color: #000;
+  text-align: center;
+  margin: 0 50px;
 }
-
 .pro h2 {
-    font-size: 200%;
-    padding-top: 30px;
+  font-size: 200%;
+  padding-top: 30px;
 }
-
 .pro .product {
-    width: 300px;
-    margin: 25px 25px;
-    position: relative;
-    transition: 0.3s;
+  width: 300px;
+  margin: 25px 25px;
+  position: relative;
+  transition: 0.3s;
 }
-
-.pro .product:hover{
-    cursor: pointer;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+.pro .product:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
-
-
 .pro .product .pro-img {
-    width: 100%;
+  width: 100%;
+}
+.pro .product .like-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 110px;
+  right: 10px;
+  z-index: 8;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.pro .product .like-btn-black {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 110px;
+  right: 10px;
+  z-index: 8;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
 }
 
 .products-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.pro .product .like-btn {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: 110px;
-    right: 10px;
-    z-index: 8;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: rgb(255, 255, 255, 0.8);
-}
-
-.pro .product .like-btn-black{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: 110px;
-    right: 10px;
-    z-index: 8;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: rgb(255, 255, 255, 0.8);
-    display: none;
-}
-
-
 
 @media only screen and (max-width: 700px) {
-    .gender-select {
-        display: none;
-    }
-    
+  .gender-select {
+    display: none;
+  }
 
-    .menu-btn {
-        display: block;
-        margin-left: 10px;
-    }
+  .menu-btn {
+    display: block;
+    margin-left: 10px;
+  }
 
-    .header-elements{
-        margin-right: 0;
-    }
+  .header-elements {
+    margin-right: 0;
+  }
+  .header-elements li {
+    margin-right: 10px;
+  }
 
-    .header-elements li{
-        margin-right: 10px;
-    }
+  .logo {
+    font-size: 150%;
+  }
 
-    .logo {
-        font-size: 150%;
-    }
+  .gender-menu {
+    display: flex;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .gender-menu a {
+    text-decoration: none;
+    width: 50%;
+    padding: 15px 10px;
+  }
+  .gender-menu a:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  .gender-menu a div {
+    text-align: center;
+  }
 
-    .gender-menu {
-        display:flex;
-        border-bottom: 1px solid gray;
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9;
+    left: -300px;
+    transition: none;
+  }
+  .navbar * {
+    color: #000;
+  }
 
-    .gender-menu a{
-        text-decoration: none;
+  .menu-link {
+    width: 90%;
+    height: 50px;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+    margin: 10px;
+  }
+  .menu-link div {
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 10px;
+  }
 
-        width: 50%;
-        padding: 15px 10px;
-    }
-
-    .gender-menu a:hover{
-        background-color: rgb(230, 230, 230);
-    }
-
-    .gender-menu a div{
-        text-align: center;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: unset;
-        position: fixed;
-        top: 0;
-        width: 300px;
-        height: 100vh;
-        background-color: white;
-        z-index: 9;
-        left: -300px;
-        transition: none;
-    }
-    
-    .navbar *{
-        color: black;
-    }
-
-    .menu-link {
-        width: 90%;
-        height: 50px;
-        padding: 0;
-        background-color: rgb(230, 230, 230);
-        margin: 10px;
-    }
-
-    
-    .menu-link div{
-        text-align: left;
-        margin-top: 15px;
-        padding-left: 10px;
-    }
-
-
-    .exit-btn {
-        display: inline;
-    }
+  .exit-btn {
+    display: inline;
+  }
 }
 
-@media (max-width: 390px) {
-    
-}
+/*# sourceMappingURL=pagestyle.css.map */
