@@ -1,21 +1,22 @@
-let bars = document.querySelector(".menu-btn");
-let menu = document.querySelector(".navbar");
-let laix = document.querySelector(".exit-btn");
-let head = document.querySelector(".header");
+let header = document.querySelector(".header");
+let barsBtn = document.querySelector(".menu-btn");
+let menuNavbar = document.querySelector(".navbar");
+let exitBtn = document.querySelector(".exit-btn");
 let likeBtn = document.querySelectorAll(".like-btn");
 let likeBtnBlack = document.querySelectorAll(".like-btn-black");
+let logo = document.querySelector(".logo");
 
-bars.addEventListener("click", () => {
-    menu.style.transition = "0.3s";
-    menu.style.left = "0";
-    head.style.opacity = "0.5";
-    head.style.pointerEvents = "none";
+barsBtn.addEventListener("click", () => {
+    menuNavbar.style.transition = "0.3s";
+    menuNavbar.style.left = "0";
+    header.style.opacity = "0.5";
+    header.style.pointerEvents = "none";
 });
 
-laix.addEventListener("click", () => {
-    menu.style.left = "-300px";
-    head.style.opacity = "1";
-    head.style.pointerEvents = "all";
+exitBtn.addEventListener("click", () => {
+    menuNavbar.style.left = "-300px";
+    header.style.opacity = "1";
+    header.style.pointerEvents = "all";
 });
 
 for(var i=0; i<likeBtn.length; i++) {
@@ -31,3 +32,7 @@ for(var i=0; i<likeBtn.length; i++) {
         whiteBtn.style.display = "block";
     });
 }
+
+logo.addEventListener("click", () => {
+    location.href = "../../../index.html";
+});

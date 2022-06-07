@@ -1,0 +1,40 @@
+@mixin genderStyle($url, $vertPos, $col) {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: 50% $vertPos;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  color: $col;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.gender-select-wrapper{
+  display: flex;
+  height: 100vh;
+  font-size: 5rem;
+}
+.gender-select-wrapper:hover{
+  cursor: pointer;
+}
+
+.woman-select{
+  @include genderStyle(url(../../images/tipa.jpg), 20%, pink);
+}
+
+.man-select{
+  @include genderStyle(url(../../images/tipo.jpg), 30%, lightblue);
+}

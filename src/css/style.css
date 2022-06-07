@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.gender-select-wrapper {
+  display: flex;
+  height: 100vh;
+  font-size: 5rem;
+}
+
+.gender-select-wrapper:hover {
+  cursor: pointer;
+}
+
+.woman-select {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../images/tipa.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  color: pink;
+}
+
+.man-select {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../images/tipo.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  color: lightblue;
+}
+
+/*# sourceMappingURL=style.css.map */

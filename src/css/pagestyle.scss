@@ -17,7 +17,7 @@
         family: Montserrat;
         display: block;
     }
-    src: url("../../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
+    src: url("../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
 }
 
 body{
@@ -151,7 +151,7 @@ body{
     height: 20px;
 }
 
-.pro{
+.product-page-wrapper {
     color:$darkest-color;
     text-align: center;
     margin: 0 50px ;

@@ -1,9 +1,9 @@
-function getCookie(cname) {
+export function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-        let c = ca[i];
+    let cookieArray = decodedCookie.split(';');
+    for(let i = 0; i <cookieArray.length; i++) {
+        let c = cookieArray[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }

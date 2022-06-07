@@ -1,12 +1,9 @@
 const cacheName = "v1 - cache";
 
 self.addEventListener("install", e => {
-    console.log("SW: installed");
 });
 
 self.addEventListener("activate", e => {
-    console.log("SW: activated");
-
     e.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
