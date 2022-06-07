@@ -7,12 +7,12 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "images/logo416.png",
+            "src": "public/images/logo416.png",
             "sizes": "416x416",
             "type": "image/png"
         },
         {
-            "src": "images/maskable_icon.png",
+            "src": "public/images/maskable_icon.png",
             "sizes": "2000X2000",
             "type": "image/png",
             "purpose": "any maskable"
