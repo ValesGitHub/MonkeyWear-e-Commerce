@@ -4,12 +4,12 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "goLive": "lt --port 5500"
+    "start": "tsc --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "localtunnel": "^2.0.2"
+  "devDependencies": {
+    "typescript": "^4.7.3"
   }
 }
