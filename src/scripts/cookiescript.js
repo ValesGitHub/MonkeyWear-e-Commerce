@@ -3,19 +3,19 @@ export function getCookie(cname) {
     let decodedCookie = decodeURIComponent(document.cookie);
     let cookieArray = decodedCookie.split(';');
     for(let i = 0; i <cookieArray.length; i++) {
-        let c = cookieArray[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
+        let cookiePart = cookieArray[i];
+        while (cookiePart.charAt(0) == ' ') {
+            cookiePart = cookiePart.substring(1);
         }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
+        if (cookiePart.indexOf(name) == 0) {
+            return cookiePart.substring(name.length, cookiePart.length);
         }
     }
     return "";
 }
 
-export function setCookie(gen, ses) {
-    if(!document.cookie || getCookie("gender") == gen) {
-        document.cookie = "gender=" + ses + "; expires=; path=/";
+export function setCookie(compareGender, changeGender) {
+    if(!document.cookie || getCookie("gender") == compareGender) {
+        document.cookie = "gender=" + changeGender + "; expires=; path=/";
     }
 }
