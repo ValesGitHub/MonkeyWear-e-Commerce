@@ -1,8 +1,5 @@
 const cacheName = "v1 - cache";
 
-self.addEventListener("install", e => {
-});
-
 self.addEventListener("activate", e => {
     e.waitUntil(
         caches.keys().then(cacheNames => {
@@ -28,6 +25,8 @@ self.addEventListener("fetch", e => {
                         cache.put(e.request, resClone);
                     });
                 return res;
-            }).catch(err => caches.match(e.request).then(res => res))
+            }).catch(err => {
+                caches.match(e.request).then(res => res)
+            })
     );
 });

@@ -124,29 +124,29 @@ body {
   height: 20px;
 }
 
-.product-page-wrapper {
+.product-container {
   color: #000;
   text-align: center;
   margin: 0 50px;
 }
-.product-page-wrapper h2 {
+.product-container h2 {
   font-size: 200%;
   padding-top: 30px;
 }
-.product-page-wrapper .product {
+.product-container .product {
   width: 300px;
   margin: 25px 25px;
   position: relative;
   transition: 0.3s;
 }
-.product-page-wrapper .product:hover {
+.product-container .product:hover {
   cursor: pointer;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
-.product-page-wrapper .product .pro-img {
+.product-container .product .pro-img {
   width: 100%;
 }
-.product-page-wrapper .product .like-btn {
+.product-container .product .like-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -157,7 +157,7 @@ body {
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.product-page-wrapper .product .like-btn-black {
+.product-container .product .like-btn-black {
   position: absolute;
   width: 30px;
   height: 30px;
