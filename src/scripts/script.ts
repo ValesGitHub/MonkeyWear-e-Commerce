@@ -2,8 +2,8 @@ const header = document.querySelector<HTMLDivElement>(".header");
 const barsBtn = document.querySelector<HTMLImageElement>(".menu-btn");
 const menuNavbar = document.querySelector<HTMLDivElement>(".navbar");
 const exitBtn = document.querySelector<HTMLImageElement>(".exit-btn");
-const likeBtn = document.querySelectorAll<HTMLImageElement>(".like-btn");
-const likeBtnBlack = document.querySelectorAll<HTMLImageElement>(".like-btn-black");
+const likeBtns = document.querySelectorAll<HTMLImageElement>(".like-btn");
+const likeBtnsBlack = document.querySelectorAll<HTMLImageElement>(".like-btn-black");
 const logo = document.querySelector<HTMLDivElement>(".logo");
 
 barsBtn?.addEventListener("click", () => {
@@ -23,15 +23,15 @@ exitBtn?.addEventListener("click", () => {
   }
 });
 
-for(var i=0; i<likeBtn.length; i++) {
-    const whiteBtn = likeBtn[i];
-    const blackBtn = likeBtnBlack[i];
-    likeBtn[i].addEventListener("mouseover", (likeBtn) => {
+for(var i=0; i<likeBtns.length; i++) {
+    const whiteBtn = likeBtns[i];
+    const blackBtn = likeBtnsBlack[i];
+    likeBtns[i].addEventListener("mouseover", (likeBtns) => {
         blackBtn.style.display = "block";
         whiteBtn.style.display = "none";
     });
 
-    likeBtnBlack[i].addEventListener("mouseout", () => {
+    likeBtnsBlack[i].addEventListener("mouseout", () => {
         blackBtn.style.display = "none";
         whiteBtn.style.display = "block";
     });
