@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../../dist/scripts/script.js" defer></script>
+    <script src="../../../dist/components/shared/product/product.js" defer></script>
     <title>Scarpe</title>
     <link rel="shortcut icon" href="../../../public/images/logo192.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/pagestyle.css">
@@ -47,45 +48,12 @@
         <h2>Scarpe Uomo</h2>
         <p>Dalle flip's alle sneakers</p>
         <div class="products-wrapper">
-            <div class="product">
-                <img src="../../../public/images/products/s1.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Ciabatte con fascietta blu</h5>
-                    <h4>10,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/s2.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Ciabatte con fascietta verde</h5>
-                    <h4>10,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/s3.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Sneaker casual blu e nera</h5>
-                    <h4>39,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/s4.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Sneaker casual grigia e gialla</h5>
-                    <h4>39,99 €</h4>
-                </div>
-            </div>
+            <app-product image="../../../public/images/products/s1.jpg" description="Ciabatte con fascietta blu" price="10,99 €"></app-product>
+            <app-product image="../../../public/images/products/s2.jpg" description="Ciabatte con fascietta verde" price="10,99 €"></app-product>
+            <app-product image="../../../public/images/products/s3.jpg" description="Sneaker casual blu e nera" price="39,99 €"></app-product>
+            <app-product image="../../../public/images/products/s4.jpg" description="Sneaker casual grigia e gialla" price="39,99 €"></app-product>
         </div>
     </div>
-    
 
     
 </body>

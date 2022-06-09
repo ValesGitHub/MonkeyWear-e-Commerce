@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../../dist/scripts/script.js" defer></script>
+    <script src="../../../dist/components/shared/product/product.js" defer></script>
     <title>Abbigliamento</title>
     <link rel="shortcut icon" href="../../../public/images/logo192.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/pagestyle.css">
@@ -47,43 +48,13 @@
         <h2>Abbigliamento Uomo</h2>
         <p>Dalle t's alle felpe</p>
         <div class="products-wrapper">
-            <div class="product">
-                <img src="../../../public/images/products/f1.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>T-shirt la grande onda di Kanagawa</h5>
-                    <h4>15,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/f2.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>T-shirt Van Gogh The Met</h5>
-                    <h4>15,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/f4.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Felpa con cappuccio sfumata</h5>
-                    <h4>29,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/f3.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Felpa basic cerniera e cappuccio</h5>
-                    <h4>39,99 €</h4>
-                </div>
-            </div>
+            <app-product image="../../../public/images/products/f1.jpg" description="T-shirt la grande onda di Kanagawa" price="15,99 €"></app-product>
+            <app-product image="../../../public/images/products/f2.jpg" description="T-shirt Van Gogh The Met" price="15,99 €"></app-product>
+            <app-product image="../../../public/images/products/f4.jpg" description="Felpa con cappuccio sfumata" price="29,99 €"></app-product>
+            <app-product image="../../../public/images/products/f3.jpg" description="Felpa basic cerniera e cappuccio" price="39,99 €"></app-product>
         </div>
     </div>
+
+    
 </body>
 </html>

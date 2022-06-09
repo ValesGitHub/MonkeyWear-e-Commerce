@@ -156,14 +156,27 @@ body{
     text-align: center;
     margin: 0 50px ;
 
+    .products-wrapper {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    app-product {
+        padding: 0;
+        border: 1px solid blue;
+    }
+
     h2 {
         font-size: 200%;
         padding-top: 30px;
     }
 
     .product {
+        border: 1px solid coral;
         width: 300px;
-        margin: 25px 25px;
+        margin: 25px 20px;
         position: relative;
         transition: 0.3s;
 
@@ -185,12 +198,6 @@ body{
             display: none;
         }
     }
-}
-
-.products-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 700px) {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../../dist/scripts/script.js" defer></script>
+    <script src="../../../dist/components/shared/product/product.js" defer></script>
     <title>Scarpe</title>
     <link rel="shortcut icon" href="../../../public/images/logo192.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/pagestyle.css">
@@ -47,45 +48,13 @@
         <h2>Accessori Uomo</h2>
         <p>Dalle collane ai cappelli</p>
         <div class="products-wrapper">
-            <div class="product">
-                <img src="../../../public/images/products/c1.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Collana con ciondolo serpente</h5>
-                    <h4>4,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/c3.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Collezione di 3 collane argento</h5>
-                    <h4>6,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/c2.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Cappelo basic con logo</h5>
-                    <h4>12,99 €</h4>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../../../public/images/products/c4.jpg" class="pro-img">
-                <img src="../../../public/images/icons/black-heart.png" class="like-btn-black">
-                <img src="../../../public/images/icons/heart-outline.png" class="like-btn">
-                <div class="desc">
-                    <h5>Capellino con stay chill ricamato</h5>
-                    <h4>12,99 €</h4>
-                </div>
-            </div>
+            <app-product image="../../../public/images/products/c1.jpg" description="Collana con ciondolo serpente" price="4,99 €"></app-product>
+            <app-product image="../../../public/images/products/c3.jpg" description="Collezione di 3 collane argento" price="6,99 €"></app-product>
+            <app-product image="../../../public/images/products/c2.jpg" description="Cappello basic con logo" price="12,99 €"></app-product>
+            <app-product image="../../../public/images/products/c4.jpg" description="Cappello con stay chill ricamato" price="12,99 €"></app-product>
         </div>
     </div>
 
-    
+
 </body>
 </html>

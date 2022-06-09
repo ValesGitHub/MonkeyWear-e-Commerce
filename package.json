@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "dev": "tsc && live-server"
+    "dev": "tsc && live-server",
+    "fast-sass": "sass --watch src/css/pagestyle.scss:src/css/pagestyle.css"
   },
   "keywords": [],
   "author": "",
