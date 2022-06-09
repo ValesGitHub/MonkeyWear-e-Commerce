@@ -9,7 +9,7 @@
     z-index: 8;
     border-radius: 50%;
     padding: 5px;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 @font-face {
@@ -17,14 +17,14 @@
         family: Montserrat;
         display: block;
     }
-    src: url("../fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
+    src: url("../../src/fonts/montserrat-variablefont_wght-webfont.woff") format("woff");
 }
 
 body{
-    margin: 0;
-    padding: 0;
     color: $primary;
     font-family: $base-font;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -39,17 +39,17 @@ body{
 }
 
 .header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: $darkest-color;
+    box-shadow: $base-box-shadow;
+    display: flex;
     height: 50px;
+    justify-content: space-between;
+    left: 0;
     position: sticky;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 9;
-    box-shadow: $base-box-shadow;
 }
 
 .menu-btn {
@@ -57,8 +57,8 @@ body{
 }
 
 .gender-select {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 100%;
     margin-left: 50px;
 
@@ -68,9 +68,9 @@ body{
     }
 
     a {
+        color: #000;
         padding: 15px 0;
         text-decoration: none;
-        color: #000;
 
         &:hover {
             background-color: $hover-color;
@@ -83,19 +83,19 @@ body{
 }
 
 .active::after {
-    content: "";
-    width: 30px;
     background-color: $primary;
-    position: absolute;
+    content: "";
     height: 0.5px;
     left: 10px;
+    position: absolute;
+    width: 30px;
 }
 
 .header-elements{
-    margin-right: 50px;
     display: flex;
-    padding-left: 0;
+    margin-right: 50px;
     margin-top: 20px;
+    padding-left: 0;
 
     li {
         list-style: none;
@@ -112,21 +112,21 @@ body{
 }
 
 .navbar {
-    width: 100%;
+    align-items: center;
     background-color: $hover-color;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 40px;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .menu-link{
     color: $primary;
-    width: 100%;
-    text-align: center;
     padding: 10.5px 0;
+    text-align: center;
     text-decoration: none;
     transition: 0.3s ease;
+    width: 100%;
     
     &:hover {
         background-color: $primary;
@@ -136,10 +136,10 @@ body{
 
 .exit-btn {
     color: blue;
-    position: absolute;
-    top: 0;
-    right: 0;
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 
     &:hover {
         cursor: pointer;
@@ -147,25 +147,23 @@ body{
 }
 
 .icon-img {
-    width: 20px;
     height: 20px;
+    width: 20px;
 }
 
 .product-container {
     color:$darkest-color;
-    text-align: center;
     margin: 0 50px ;
+    text-align: center;
 
     .products-wrapper {
-        border: 1px solid red;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     app-product {
         padding: 0;
-        border: 1px solid blue;
     }
 
     h2 {
@@ -175,14 +173,14 @@ body{
 
     .product {
         border: 1px solid coral;
-        width: 300px;
         margin: 25px 20px;
         position: relative;
         transition: 0.3s;
+        width: 300px;
 
         &:hover {
-            cursor: pointer;
             box-shadow: $base-box-shadow;
+            cursor: pointer;
         }
 
         .pro-img {
@@ -191,6 +189,7 @@ body{
 
         .like-btn {
             @include heartStyle();
+
         }
 
         .like-btn-black{
@@ -223,15 +222,15 @@ body{
     }
 
     .gender-menu {
-        display:flex;
         border-bottom: 1px solid gray;
-        width: 100%;
+        display:flex;
         margin-bottom: 10px;
+        width: 100%;
 
         a {
+            padding: 15px 10px;
             text-decoration: none;
             width: 50%;
-            padding: 15px 10px;
             
             &:hover{
                 background-color: $secondary;
@@ -244,35 +243,34 @@ body{
     }
 
     .navbar {
+        background-color: $primary;
         display: flex;
         flex-direction: column;
+        height: 100vh;
         justify-content: unset;
+        left: -300px;
         position: fixed;
         top: 0;
-        width: 300px;
-        height: 100vh;
-        background-color: $primary;
-        z-index: 9;
-        left: -300px;
         transition: none;
+        width: 300px;
+        z-index: 9;
 
         * {
-            color:
-            $darkest-color;
+            color: $darkest-color;
         }
     }
 
     .menu-link {
-        width: 90%;
-        height: 50px;
-        padding: 0;
         background-color: $secondary;
+        height: 50px;
         margin: 10px;
+        padding: 0;
+        width: 90%;
 
         div {
-            text-align: left;
             margin-top: 15px;
             padding-left: 10px;
+            text-align: left;
         }
     }
 

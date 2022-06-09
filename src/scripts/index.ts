@@ -1,4 +1,4 @@
-import { getCookie } from "./scripts/cookiescript.js";
+import { getCookie } from "./cookiescript.js";
 
 if(document.cookie) {
     if(getCookie("gender") == 'M') {

@@ -67,17 +67,21 @@ class Product extends HTMLElement {
     const img = this.shadowRoot?.querySelector<HTMLImageElement>(".pro-img");
     const desc = this.shadowRoot?.querySelector("h5");
     const price = this.shadowRoot?.querySelector("h4");
+
+    const imgSrc = this.getAttribute('image');
+    const descText = this.getAttribute('description');
+    const priceText = this.getAttribute('price');
     
-    if(img) {
-      img.src = this.getAttribute('image')!;
+    if(img && imgSrc) {
+      img.src = imgSrc;
     }
 
-    if(desc) {
-      desc.innerText = this.getAttribute('description')!;
+    if(desc && descText) {
+      desc.innerText = descText;
     }
 
-    if(price) {
-      price.innerText = this.getAttribute('price')!;
+    if(price && priceText) {
+      price.innerText = priceText;
     }
   }
 
