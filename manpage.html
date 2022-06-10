@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#9400D3">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9400D3" />
     <script src="./dist/scripts/script.js" defer></script>
-    <script type="module" src="./dist/pages/man_side/manscript.js" defer></script>
+    <script
+      type="module"
+      src="./dist/pages/man_side/manscript.js"
+      defer
+    ></script>
     <script src="service_worker/script.js" defer></script>
     <title>MonkeyWear UOMO</title>
-    <link rel="shortcut icon" href="public/images/logo192.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="public/images/logo416.jpg">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="src/pages/man_side/style.css">
-    <link rel="stylesheet" href="dist/css/pagestyle.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="public/images/logo192.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="public/images/logo416.jpg" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="src/pages/man_side/style.css" />
+    <link rel="stylesheet" href="dist/css/pagestyle.css" />
+  </head>
+  <body>
     <div class="header">
+      <div class="gender-select">
+        <a href="womanpage.html"><div class="woman-select">DONNA</div></a>
+        <a href="#" class="man-link active"
+          ><div class="man-select">UOMO</div></a
+        >
+      </div>
 
-        <div class="gender-select">
-            <a href="womanpage.html"><div class="woman-select">DONNA</div></a>
-            <a href="#" class="man-link active"><div class="man-select ">UOMO</div></a>
-        </div>
+      <img src="public/images/icons/menu.png" class="icon-img menu-btn" />
 
-        <img src="public/images/icons/menu.png" class="icon-img menu-btn">
+      <div class="logo">MONKEY WEAR</div>
 
-        <div class="logo">MONKEY WEAR</div>
-
-        <ul class="header-elements">
-            <li><img src="public/images/icons/magnify.png" class="icon-img"></li>
-            <li><a href="#"><img src="public/images/icons/heart.png" class="icon-img"></a></li>
-            <li><img src="public/images/icons/account.png" class="account-img icon-img"></li>
-            <li><a href="#"><img src="public/images/icons/shopping.png" class="icon-img"></a></li>
-        </ul>
-
+      <ul class="header-elements">
+        <li><img src="public/images/icons/magnify.png" class="icon-img" /></li>
+        <li>
+          <a href="#"
+            ><img src="public/images/icons/heart.png" class="icon-img"
+          /></a>
+        </li>
+        <li>
+          <img
+            src="public/images/icons/account.png"
+            class="account-img icon-img"
+          />
+        </li>
+        <li>
+          <a href="#"
+            ><img src="public/images/icons/shopping.png" class="icon-img"
+          /></a>
+        </li>
+      </ul>
     </div>
 
     <div class="navbar">
-        <div class="gender-menu">
-            <a href="womanpage.html"><div class="woman-menu">DONNA</div></a>
-            <a href="#" class="man-menu-link"><div class="man-menu">UOMO</div></a>
-        </div>
-        <a href="src/pages/man_side/clothing.html" class="menu-link" ><div>Abbigliamento</div></a>
-        <a href="src/pages/man_side/shoes.html" class="menu-link"><div>Scarpe</div></a>
-        <a href="src/pages/man_side/accessories.html" class="menu-link"><div>Accessori</div></a>
-        <img src="public/images/icons/close.png" class="icon-img exit-btn">
+      <div class="gender-menu">
+        <a href="womanpage.html"><div class="woman-menu">DONNA</div></a>
+        <a href="#" class="man-menu-link"><div class="man-menu">UOMO</div></a>
+      </div>
+      <div class="menu-link-container">
+        <!-- <a href="#" class="menu-link"><div>Abbigliamento</div></a>
+        <a href="#" class="menu-link"><div>Scarpe</div></a>
+        <a href="#" class="menu-link"><div>Accessori</div></a> -->
+      </div>
+      <img src="public/images/icons/close.png" class="icon-img exit-btn" />
     </div>
-    
 
-    
-</body>
+    <div class="page-content"></div>
+  </body>
 </html>

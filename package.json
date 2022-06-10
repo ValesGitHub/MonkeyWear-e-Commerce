@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "dev": "tsc && sass src/scss:dist/css && live-server",
-    "fast-sass": "sass --watch src/css/pagestyle.scss:src/css/pagestyle.css"
+    "fast-sass": "sass --watch src/scss/:dist/css/"
   },
   "keywords": [],
   "author": "",

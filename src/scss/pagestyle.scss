@@ -83,8 +83,8 @@ body{
 }
 
 .active::after {
-    background-color: $primary;
     content: "";
+    background-color: $primary;
     height: 0.5px;
     left: 10px;
     position: absolute;
@@ -118,21 +118,30 @@ body{
     height: 40px;
     justify-content: space-around;
     width: 100%;
-}
 
-.menu-link{
-    color: $primary;
-    padding: 10.5px 0;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s ease;
-    width: 100%;
-    
-    &:hover {
-        background-color: $primary;
-        color: $darkest-color;
+    .menu-link-container {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+
+        .menu-link{
+            color: $primary;
+            padding: 10.5px 0;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s ease;
+            width: 100%;
+
+            &:hover {
+                background-color: $primary;
+                color: $darkest-color;
+            }
+        }
     }
 }
+
+
 
 .exit-btn {
     color: blue;
@@ -258,21 +267,28 @@ body{
         * {
             color: $darkest-color;
         }
-    }
 
-    .menu-link {
-        background-color: $secondary;
-        height: 50px;
-        margin: 10px;
-        padding: 0;
-        width: 90%;
+        .menu-link-container {
+            height: auto;
+            flex-direction: column;
 
-        div {
-            margin-top: 15px;
-            padding-left: 10px;
-            text-align: left;
+            .menu-link {
+                background-color: $secondary;
+                height: 50px;
+                margin: 10px;
+                padding: 0;
+                width: 90%;
+        
+                div {
+                    margin-top: 15px;
+                    padding-left: 10px;
+                    text-align: left;
+                }
+            }
         }
     }
+
+    
 
     .exit-btn {
         display: inline;
