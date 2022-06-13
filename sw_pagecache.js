@@ -1,5 +1,6 @@
 const cacheName = "v1 - cache";
 
+
 self.addEventListener("activate", e => {
     e.waitUntil(
         caches.keys().then(cacheNames => {

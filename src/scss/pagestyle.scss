@@ -120,6 +120,7 @@ body{
     width: 100%;
 
     .menu-link-container {
+        pointer-events: all;
         display: flex;
         height: 100%;
         justify-content: space-around;
@@ -136,6 +137,7 @@ body{
             &:hover {
                 background-color: $primary;
                 color: $darkest-color;
+                cursor: pointer;
             }
         }
     }
@@ -205,6 +207,38 @@ body{
             @include heartStyle();
             display: none;
         }
+    }
+}
+
+.page-content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading {
+        display: flex;
+        justify-content: center;
+        
+        
+        &::after {
+            content: "";
+            border: 10px solid #dddddd {
+                top-color: $darkest-color;    
+                right-color: $darkest-color;    
+                bottom-color: $darkest-color;    
+                radius: 50%;
+            }
+            height: 100px;
+            width: 100px;
+            animation: loading 1s linear infinite;
+        }
+    }
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
     }
 }
 

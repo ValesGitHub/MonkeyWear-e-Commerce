@@ -3,40 +3,40 @@ import { AvailableProductCategories } from "../models/shared/enums.js"
 
 const clothingsProducts: Product[] = [
   {
-  id: "1",
-  description: "first",
-  price: 10,
-  url: "an url"
+    id: "1",
+    description: "T-shirt la grande onda di Kanagawa",
+    price: 15.99,
+    url: "public/images/products/f1.jpg"
   },
   {
     id: "2",
-    description: "second",
-    price: 20,
-    url: "an url"
+    description: "T-shirt Van Gogh The Met",
+    price: 15.99,
+    url: "public/images/products/f2.jpg"
   },
   {
     id: "3",
-    description: "third",
-    price: 30,
-    url: "an url"
+    description: "Felpa con cappuccio sfumata",
+    price: 29.99,
+    url: "public/images/products/f4.jpg"
   },
 ];
 
 const shoesProducts: Product[] = [
   {
-  id: "6",
-  description: "first",
-  price: 10,
-  url: "an url"
+    id: "4",
+    description: "first",
+    price: 10,
+    url: "an url"
   },
   {
-    id: "2",
+    id: "5",
     description: "second",
     price: 20,
     url: "an url"
   },
   {
-    id: "3",
+    id: "6",
     description: "third",
     price: 30,
     url: "an url"
@@ -45,19 +45,19 @@ const shoesProducts: Product[] = [
 
 const accessoriesProducts: Product[] = [
   {
-  id: "8",
+  id: "7",
   description: "first",
   price: 10,
   url: "an url"
   },
   {
-    id: "2",
+    id: "8",
     description: "second",
     price: 20,
     url: "an url"
   },
   {
-    id: "3",
+    id: "9",
     description: "third",
     price: 30,
     url: "an url"

@@ -11,6 +11,7 @@
       src="./dist/pages/man_side/manscript.js"
       defer
     ></script>
+    
     <script src="service_worker/script.js" defer></script>
     <title>MonkeyWear UOMO</title>
     <link
@@ -70,6 +71,20 @@
       <img src="public/images/icons/close.png" class="icon-img exit-btn" />
     </div>
 
-    <div class="page-content"></div>
+    <div class="page-content">
+      <div class="product-container"> 
+        <h2>Abbigliamento Uomo</h2>
+        <p>Dalle t's alle felpe</p>
+        <div class="products-wrapper">
+            <app-product image="public/images/products/f1.jpg" description="T-shirt la grande onda di Kanagawa" price="15,99 €"></app-product>
+            <app-product image="public/images/products/f2.jpg" description="T-shirt Van Gogh The Met" price="15,99 €"></app-product>
+            <app-product image="public/images/products/f4.jpg" description="Felpa con cappuccio sfumata" price="29,99 €"></app-product>
+            <app-product image="public/images/products/f3.jpg" description="Felpa basic cerniera e cappuccio" price="39,99 €"></app-product>
+        </div>
+    </div>
+
+    </div>  
+
+    <script src="dist/components/shared/product/product.js"></script>
   </body>
 </html>

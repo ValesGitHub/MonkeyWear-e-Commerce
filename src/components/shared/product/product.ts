@@ -62,7 +62,7 @@ class Product extends HTMLElement {
   constructor() {
     super();
 
-    this.attachShadow({ mode: 'open' });
+    this?.attachShadow({ mode: 'open' });
     this.shadowRoot?.appendChild(template.content.cloneNode(true));
 
     const img = this.shadowRoot?.querySelector<HTMLImageElement>(".pro-img");
@@ -90,7 +90,7 @@ class Product extends HTMLElement {
     const likeBtns = this.shadowRoot?.querySelectorAll<HTMLImageElement>(".like-btn");
     const likeBtnsBlack = this.shadowRoot?.querySelectorAll<HTMLImageElement>(".like-btn-black");
 
-    for(var i=0; i<likeBtns!.length; i++) {
+    for(var i=0; i<likeBtns!.length; i++) { 
       const whiteBtn = likeBtns![i];
       const blackBtn = likeBtnsBlack![i];
       likeBtns![i].addEventListener("mouseover", (likeBtns) => {
@@ -102,7 +102,7 @@ class Product extends HTMLElement {
           blackBtn.style.display = "none";
           whiteBtn.style.display = "block";
       });
-  }
+    }
   }
 }
 
