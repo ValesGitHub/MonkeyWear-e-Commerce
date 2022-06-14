@@ -210,19 +210,19 @@ body{
     }
 }
 
-.page-content {
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+.page-content {
     .loading {
         display: flex;
         justify-content: center;
-        
+        left: 50%;
+        position: absolute;
+        top:50%;
+        transform: translate(-50%, -50%);
         
         &::after {
             content: "";
+            animation: loading 1s linear infinite;
             border: 10px solid #dddddd {
                 top-color: $darkest-color;    
                 right-color: $darkest-color;    
@@ -231,7 +231,7 @@ body{
             }
             height: 100px;
             width: 100px;
-            animation: loading 1s linear infinite;
+            
         }
     }
 }

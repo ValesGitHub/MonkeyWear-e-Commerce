@@ -7,6 +7,8 @@ export interface CommonResponse {
 }
 
 export interface Product {
+  h2: string;
+  p: string;
   id: string;
   url: string;
   description: string;

@@ -6,15 +6,19 @@ import { AvailableProductCategories } from "../../models/shared/enums.js";
 
 const menuLinkContainer = document.querySelector<HTMLDivElement>('.menu-link-container');
 const pageContentContainer = document.querySelector<HTMLDivElement>('.page-content');
+const pageHeader = document.querySelector<HTMLDivElement>(".header");
+const pageNavbar = document.querySelector<HTMLDivElement>(".navbar");
 
 setCookie("F", "M");
 
 function addSpinner() {
   if(pageContentContainer) {
     pageContentContainer.innerHTML = '';
+    if(pageHeader && pageNavbar) {
+      pageHeader.style.opacity = "0.5";
+      pageNavbar.style.opacity = "0.5";
+    }
   }
-
-  console.log("Main Script: SpinnerStarts");  
   const divSpinner = document.createElement('div');
   divSpinner.setAttribute('class', 'loading');
   pageContentContainer?.appendChild(divSpinner);
@@ -22,20 +26,37 @@ function addSpinner() {
 
 function addNewProducts(products: Product[]) {
   if(pageContentContainer) {
-    pageContentContainer.innerHTML = '';
-    products.forEach(product => {
-      pageContentContainer.innerHTML += `
-      <app-product image="${product.url}" description="${product.description}" price="${product.price} €"></app-product>
+    pageContentContainer.innerHTML = `
+    <div class="product-container"> 
+      <h2 class="header-product"></h2>
+      <p class="paragraph-product"></p>
+      <div class="products-wrapper">
+      </div>
+    </div>
     `;
+    const headerProduct = document.querySelector<HTMLHeadElement>(".header-product");
+    const paragraphProduct = document.querySelector<HTMLParagraphElement>(".paragraph-product");
+    const productsWrapper = document.querySelector<HTMLDivElement>(".products-wrapper");
+
+    if(headerProduct && paragraphProduct) {
+      headerProduct.innerHTML = products[0].h2;
+      paragraphProduct.innerHTML = products[0].p;
+    } 
+    
+
+    products.forEach(product => {
+      if(productsWrapper) {
+        productsWrapper.innerHTML += `
+          <app-product image="${product.url}" description="${product.description}" price="${product.price} €"></app-product>
+        `;
+      }
     });
   }
-  console.log(`Main Script: Added Products `, products);
-  console.log("Main Script: SpinnerStops");
+
 }
 
 function addMessage(message: string) {
-  console.log(`Main Script: ${message}`);
-  console.log("Main Script: Spinner Stops");
+
 }
 
 if(menuLinkContainer){
@@ -80,10 +101,13 @@ async function onCategoryClick(category: string) {
     }
     else {
       addMessage("No category");
-      console.log(result.messageTitle, result.message);
     }
   }catch(e) {
-    console.log(e, "failed chiamata");
     addMessage("Non siamo stati in grado di caricare i dati");
+  }
+
+  if(pageHeader && pageNavbar) {
+    pageHeader.style.opacity = "1";
+    pageNavbar.style.opacity = "1";
   }
 }
